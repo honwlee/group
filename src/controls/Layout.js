@@ -107,6 +107,7 @@ define([
                             hidden: false,
                             opts: {},
                             editing: true,
+                            alwaysRefresh: true,
                             isPopPage: true,
                             container: this.centerNode,
                             callback: "navAddCallback"

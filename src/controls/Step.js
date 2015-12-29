@@ -59,7 +59,7 @@ define([
         "-parent-": BaseStep,
         "-protected-": {
             "-fields-": {
-                templateString: "<div><ul class=\"list\" data-dojo-attach-point=\"listNode\"></ul></div>",
+                templateString: "<div><div class=\"list row\" data-dojo-attach-point=\"listNode\"></div></div>",
                 baseClass: "step1",
                 keys: null
             },
@@ -71,13 +71,23 @@ define([
                 },
 
                 initItem: function(key, value) {
-                    var li = qUtils.domConstruct.create("li", {
-                        "class": "item",
-                        onclick: Function.hitch(this, "onStepOver", key)
+                    var div = qUtils.domConstruct.create("div", {
+                        "class": "item col-xs-6 col-md-3",
+                        onclick: Function.hitch(this, function() {
+                            this.onStepOver({
+                                key: key
+                            });
+                        })
                     }, this.listNode);
+                    var a = qUtils.domConstruct.create("a", {
+                        "class": "thumbnail"
+                    }, div);
+                    qUtils.domConstruct.create("img", {
+                        src: ""
+                    }, a);
                     qUtils.domConstruct.create("span", {
                         innerHTML: value
-                    }, li);
+                    }, a);
                 }
             }
         },
@@ -105,10 +115,7 @@ define([
             },
             "-methods-": {
                 init: function() {
-                    this.bindEvent(this.provinceNode, this.univNode);
-                    this.bindEvent(this.univNode, this.schoolNode);
-                    this.bindEvent(this.schoolNode, this.yearNode, true);
-                    on(this.nextNode, "click", Function.hitch(this, "onStepOver", this.nextKey));
+                    this.bindEvents();
                 },
 
                 initOptions: function(node, data) {
@@ -124,23 +131,64 @@ define([
                     }, this);
                 },
 
-                bindEvent: function(node, nextNode, isYear) {
+                bindEvents: function() {
                     var self = this;
-                    on(node, "change", function() {
+                    on(this.provinceNode, "change", function() {
                         if (this.value) {
-                            qUtils.domConstruct.empty(nextNode);
-                            if (isYear) {
-                                catSrv.initYearCats().then(function(items) {
-                                    self.initOptions(nextNode, items);
-                                    qUtils.domClass.remove(nextNode, "disabled");
-                                });
-                            } else {
-                                orgSrv.initSubs(this.value).then(function(items) {
-                                    self.initOptions(nextNode, items);
-                                    qUtils.domClass.remove(nextNode, "disabled");
-                                });
-                            }
+                            [self.univNode, self.schoolNode, self.yearNode].forEach(qUtils.domConstruct.empty);
+                            orgSrv.initSubs(this.value).then(function(items) {
+                                self.initOptions(self.univNode, items);
+                                qUtils.domClass.remove(self.univNode, "disabled");
+                            });
+                            self.orgId = this.value;
+                        } else {
+                            self.orgId = null;
                         }
+                    });
+
+                    on(this.univNode, "change", function() {
+                        if (this.value) {
+                            [self.schoolNode, self.yearNode].forEach(qUtils.domConstruct.empty);
+                            orgSrv.initSubs(this.value).then(function(items) {
+                                self.initOptions(self.schoolNode, items);
+                                qUtils.domClass.remove(self.schoolNode, "disabled");
+                            });
+                            self.orgId = this.value;
+                        } else {
+                            self.orgId = self.province.value;
+                        }
+                    });
+
+                    on(this.schoolNode, "change", function() {
+                        if (this.value) {
+                            qUtils.domConstruct.empty(self.yearNode);
+                            catSrv.initYearCats().then(function(items) {
+                                self.initOptions(self.yearNode, items);
+                                qUtils.domClass.remove(self.yearNode, "disabled");
+                            });
+                            self.orgId = this.value;
+                        } else {
+                            self.orgId = self.univNode.value;
+                        }
+                    });
+
+                    on(this.yearNode, "click", function() {
+                        self.catId = parseInt(this.value);
+                        if (self.catId) {
+                            self.stepOver({
+                                key: self.nextKey,
+                                catId: self.catId,
+                                orgId: self.orgId
+                            });
+                        }
+                    });
+
+                    on(this.nextNode, "click", function() {
+                        self.stepOver({
+                            key: self.nextKey,
+                            catId: self.catId,
+                            orgId: self.orgId
+                        });
                     });
                 }
             }
@@ -149,8 +197,8 @@ define([
         "-public-": {
             "-attributes-": {},
             "-methods-": {
-                addBread: function(item) {
-                    this.breadcrumb.addItem(item);
+                stepOver: function(args) {
+                    if (args.orgId) this.onStepOver(args);
                 }
             }
         },
@@ -175,28 +223,77 @@ define([
             },
             "-methods-": {
                 init: function() {
-
+                    this.bindEvents();
                 },
 
-                eventBind: function() {
-                    this.own(
-                        on(this.saveBtnNode, "click", Function.hitch(this, "add"))
-                    );
+                initOptions: function(node, data) {
+                    qUtils.domConstruct.create("option", {
+                        value: null,
+                        innerHTML: "请选择"
+                    }, node);
+                    data.forEach(function(info) {
+                        qUtils.domConstruct.create("option", {
+                            value: info.id,
+                            innerHTML: info.name
+                        }, node);
+                    }, this);
+                },
+
+                bindEvents: function() {
+                    var self = this;
+                    on(this.provinceNode, "change", function() {
+                        if (this.value) {
+                            qUtils.domConstruct.empty(self.univNode);
+                            orgSrv.initSubs(this.value).then(function(items) {
+                                self.initOptions(self.univNode, items);
+                                qUtils.domClass.remove(self.univNode, "disabled");
+                            });
+                            self.orgId = this.value;
+                        } else {
+                            self.orgId = null;
+                        }
+                    });
+
+                    on(this.univNode, "change", function() {
+                        if (parseInt(this.value)) {
+                            self.orgId = this.value;
+                            self.stepOver({
+                                key: self.nextKey,
+                                orgId: self.orgId
+                            });
+                        } else {
+                            self.orgId = self.province.value;
+                        }
+                    });
+
+                    on(this.nextNode, "click", function() {
+                        self.stepOver({
+                            key: self.nextKey,
+                            catId: self.catId,
+                            orgId: self.orgId
+                        });
+                    });
                 }
             }
         },
 
         "-public-": {
-            "-attributes-": {
-
-            },
-            "-methods-": {}
+            "-attributes-": {},
+            "-methods-": {
+                stepOver: function(args) {
+                    if (args.orgId) this.onStepOver(args);
+                }
+            }
         },
 
         "-constructor-": {
             initialize: function(params) {
+                var self = this;
                 this.overrided(params);
-                this.init();
+                orgSrv.init().then(function(memory) {
+                    self.init();
+                    self.initOptions(self.provinceNode, memory.query({}), self.univNode);
+                });
             }
         }
     });
@@ -208,14 +305,30 @@ define([
                 baseClass: "step23"
             },
             "-methods-": {
-                init: function() {
-
-                },
-
-                eventBind: function() {
-                    this.own(
-                        on(this.saveBtnNode, "click", Function.hitch(this, "add"))
-                    );
+                init: function(cats) {
+                    var self = this;
+                    cats.forEach(function(cat) {
+                        var div = qUtils.domConstruct.create("div", {
+                            "class": "col-xs-6 col-md-3 cat-item",
+                            onclick: function() {
+                                self.onStepOver({
+                                    key: self.nextKey,
+                                    catId: cat.id
+                                });
+                            }
+                        }, self.listNode);
+                        var a = qUtils.domConstruct.create("a", {
+                            "class": "thumbnail"
+                        }, div);
+                        qUtils.domConstruct.create("img", {
+                            "class": "item-img",
+                            src: ""
+                        }, a);
+                        qUtils.domConstruct.create("span", {
+                            "class": "label label-primary",
+                            innerHTML: cat.name,
+                        }, a);
+                    });
                 }
             }
         },
@@ -230,7 +343,10 @@ define([
         "-constructor-": {
             initialize: function(params) {
                 this.overrided(params);
-                this.init();
+                var self = this;
+                groupSrv.initInterestCats().then(function(cats) {
+                    self.init(cats);
+                });
             }
         }
     });
@@ -240,6 +356,49 @@ define([
             "-fields-": {
                 templateString: step3Tpl,
                 baseClass: "step3"
+            },
+            "-methods-": {
+                init: function() {
+                    this.eventsBind();
+                },
+
+                eventsBind: function() {
+                    var self = this;
+                    on(this.saveNode, "click", function() {
+                        self.onStepOver({
+                            key: null,
+                            name: self.nameNode.value,
+                            description: self.descNode.value
+                        });
+                    });
+                    on(this.cancelNode, "click", Function.hitch(this, "onStepOver"));
+                }
+            }
+        },
+
+        "-public-": {
+            "-attributes-": {
+
+            },
+            "-methods-": {
+
+            }
+        },
+
+        "-constructor-": {
+            initialize: function(params) {
+                this.overrided(params);
+                this.init();
+            }
+        }
+    });
+
+    var Step4 = Class.declare({
+        "-parent-": BaseStep,
+        "-protected-": {
+            "-fields-": {
+                templateString: step4Tpl,
+                baseClass: "step4"
             },
             "-methods-": {
                 init: function() {
@@ -270,42 +429,7 @@ define([
             }
         }
     });
-    var Step4 = Class.declare({
-        "-parent-": BaseStep,
-        "-protected-": {
-            "-fields-": {
-                templateString: step4Tpl,
-                baseClass: "step4"
-            },
-            "-methods-": {
-                init: function() {
 
-                },
-
-                eventBind: function() {
-                    this.own(
-                        on(this.saveBtnNode, "click", Function.hitch(this, "add"))
-                    );
-                }
-            }
-        },
-
-        "-public-": {
-            "-attributes-": {
-
-            },
-            "-methods-": {
-
-            }
-        },
-
-        "-constructor-": {
-            initialize: function(params) {
-                this.overrided(params);
-                this.init();
-            }
-        }
-    });
     return Class.declare({
         "-parent-": BaseUi,
         "-interfaces-": [],
@@ -315,10 +439,12 @@ define([
                 nlsCommon: nlsCommon,
                 "$$contentTemplate": stepTpl,
                 baseClass: "step",
+                style: "width:100%;height:100%",
                 fontAwesome: FontAwesome
             },
             "-methods-": {
                 init: function() {
+                    this.formInfo = {};
                     this.steps = {
                         step1: {
                             objClass: Step1,
@@ -348,7 +474,7 @@ define([
                             objClass: Step3,
                             notSkip: false,
                             prevKey: null,
-                            nextKey: "step3"
+                            nextKey: "step4"
                         },
                         step4: {
                             objClass: Step4,
@@ -369,6 +495,8 @@ define([
                     this.initStep(this.steps["step3"]);
                     this.initStep(this.steps["step4"]);
                     this.eventBind();
+                    qUtils.domClass.add(this.prevNode, "disabled");
+                    qUtils.domClass.add(this.skipNode, "disabled");
                 },
 
                 initStep: function(stepOpts, opts) {
@@ -381,11 +509,24 @@ define([
                     var li = stepOpts.thumb = qUtils.domConstruct.create("li", {
                         "class": "thumb-item"
                     }, self.thumbsNode);
-                    on(step, "stepOver", function(key) {
-                        stepOpts.nextKey = key;
-                        var nextOpts = self.steps[key];
-                        if (!nextOpts.step) self.initStep(nextOpts);
-                        self.selectStep(nextOpts);
+                    on(step, "stepOver", function(args) {
+                        qUtils.domClass.remove(self.prevNode, "disabled");
+                        if (!args) {
+                            self.onHide();
+                        } else {
+                            var key = args.key;
+                            delete args.key;
+                            Function.mixin(self.formInfo, args);
+                            if (key) {
+                                if (!stepOpts.nextKey) stepOpts.nextKey = key;
+                                if (!stepOpts.prevKey) stepOpts.prevKey = key;
+                                var nextOpts = self.steps[key];
+                                if (!nextOpts.step) self.initStep(nextOpts);
+                                self.selectStep(nextOpts);
+                            } else {
+                                self.add();
+                            }
+                        }
                     });
                     return step;
                 },
@@ -424,7 +565,43 @@ define([
                 skipStep: function() {
                     if (!this.currentStepOpts || !this.currentStepOpts.nextKey || this.currentStepOpts.notSkip) return;
                     this.contentNode.selectChild(this.steps[this.currentStepOpts.nextKey].step, true);
-                }
+                },
+
+                add: function() {
+                    var info = this.formInfo;
+                    if (info.name === "") {
+                        return qfaceDialog.alert({
+                            message: "Name can't be empty!"
+                        });
+                    }
+                    var self = this,
+                        data = {
+                            name: info.name,
+                            description: info.description,
+                            category_id: info.catId,
+                            org_id: info.orgId
+                        };
+                    groupSrv.addGroup(data).then(function(cBData) {
+                        if (cBData.status) {
+                            qfaceDialog.yesno({
+                                message: "社区： " + info.name + "创建成功，自定义社区？"
+                            }).then(function(yes) {
+                                if (yes) {
+                                    self.selectStep(self.steps["step4"])
+                                } else {
+                                    self.onAdd(cBData.group);
+                                }
+                            });
+                        } else {
+                            qDialog.alert({
+                                message: cBData.msg
+                            });
+                        }
+                    });
+                },
+
+                onHide: function() {},
+                onAdd: function(group) {}
             }
         },
 
