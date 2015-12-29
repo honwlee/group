@@ -1,0 +1,91 @@
+define([
+    "dojo/on",
+    "dojo/mouse",
+    "dojo/topic",
+    "dojo/dom-class",
+    "dojo/dom-construct",
+    "i18n!../nls/app",
+    "text!../templates/setting.html",
+    "qface/controls/ITemplated",
+    "utilhub/ItemsControl",
+    "bundle!dependencies/services/group_srv",
+    "qscript/lang/Class"
+], function(on, mouse, topic, domClass, domConstruct, nlsApp, template, ITemplated,
+    ItemsControl, groupSrv, Class) {
+    var Setting = Class.declare({
+        "-parent-": ItemsControl,
+        "-interfaces-": [ITemplated],
+        "-protected-": {
+            "-fields-": {
+                nls: nlsApp,
+                templateString: template,
+                baseClass: "groupSetting",
+                fontAwesome: FontAwesome,
+                mainLayout: null
+            },
+            "-methods-": {
+                init: function() {
+                    // this.eventBind();
+                },
+
+                eventBind: function() {
+                    on(this.saveBtnNode, "click", Function.hitch(this, "saveGroup"));
+                },
+
+                saveGroup: function() {
+                    var data = this.verifyData();
+                    if (!data.isValid) {
+                        return;
+                    }
+
+                    var config = data.config;
+                    var self = this;
+                    groupSrv.addGroup(config).then(function(cbData) {
+                        console.log(cbData);
+                        self.hiddenDialog();
+                    });
+                },
+
+                verifyData: function() {
+                    var name = this.nameNode.value;
+                    var retData = {
+                        "isValid": true
+                    };
+                    if (name === "") {
+                        qfaceDialog.alert({
+                            message: "Name can't be empty!"
+                        });
+                        retData.isValid = false;
+                        return retData;
+                    }
+
+                    var config = {
+                        "name": name
+                    };
+
+                    retData.config = config;
+
+                    return retData;
+                },
+
+                hiddenDialog: function() {
+                    this.mainLayout.toggleRightSide();
+                }
+            }
+        },
+
+        "-public-": {
+            "-attributes-": {},
+
+            "-methods-": {}
+        },
+
+        "-constructor-": {
+            initialize: function(params) {
+                this["super"](params);
+                this.init();
+            }
+        }
+    });
+    return Setting;
+});

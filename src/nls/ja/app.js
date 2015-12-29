@@ -1,0 +1,28 @@
+define({
+    all: "全部",
+    app: "Group",
+    member: "成员",
+    notificate: "Notificate",
+    movement: "事件",
+    setting: "配置",
+    remove: "删除",
+    school: "学校",
+    interest: "兴趣",
+    join: "加入",
+    "public": "公共页",
+    tweets: "动态",
+    members: "成员列表",
+    activities: "活动",
+    photos: "博客",
+    file: "文件",
+    blog: "博客",
+    feed: "Feed",
+    store: "Store",
+    desktop: "桌面",
+    add: "添加社区",
+    help: "帮助",
+
+    filter: "过滤",
+    noFilter: "取消过滤",
+    cancelFilter: "全部隐藏"
+});

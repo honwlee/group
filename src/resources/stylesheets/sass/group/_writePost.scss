@@ -1,0 +1,229 @@
+$bg: #fafafa;
+$lightestBlue: #eef2f7;
+$lightBlue: #d7dfeA;
+$blue: #456ba2;
+$darkBlue: #2F5c98;
+$ease: .15s linear;
+.writePost {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  height: 176px;
+  overflow: hidden;
+  .trigger {
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    padding: 0;
+    margin: 0 0 0 20px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    @include transition( color 0.15s linear);
+    font-size: 10pt;
+    color: #456ba2;
+    font-weight: bold;
+    line-height: 35px;
+    -webkit-font-smoothing: antialiased;
+    &:before {
+      float: left;
+      margin-right: 5px;
+      font-family: FontAwesome, sans-serif;
+      font-size: 15pt;
+      color: #456BA2;
+      font-weight: bold;
+    }
+    &.active {
+      cursor: default;
+      color: #d7dfea;
+      &:before {
+        color: #d7dfea;
+      }
+    }
+  }
+  .frame {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    clear: both;
+    height: 140px;
+    @include box-shadow(0 -1px #D7DFEA, 0 1px #D7DFEA);
+  }
+  .frame {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    clear: both;
+    height: 140px;
+    @include box-shadow(0 -1px $lightBlue, 0 1px $lightBlue);
+    .inset {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $bg;
+    }
+    .status {
+      .input {
+        float: left;
+        width: 100%;
+        height: 105px;
+        padding: 10px;
+        margin: 0;
+        outline: 0;
+        border: 0;
+        background: transparent;
+        resize: none;
+        font-size: 10pt;
+        color: #555;
+        font-smoothing: antialiased;
+        &::-webkit-input-placeholder {
+          @include transition(color $ease);
+          color: rgba(0, 0, 0, .15);
+          font-weight: bold;
+        }
+        &:focus::-webkit-input-placeholder {
+          color: rgba(0, 0, 0, .3);
+        }
+      }
+      ul {
+        clear: both;
+        height: 35px;
+        background: $lightestBlue;
+        @include box-shadow(0 -1px $lightBlue);
+        li {
+          cursor: pointer;
+          position: relative;
+          float: left;
+          min-width: 35px;
+          height: 35px;
+          @include box-shadow( inset -1px 0 $lightBlue);
+          @include transition(background $ease);
+          color: #555;
+          font-weight: bold;
+          line-height: 35px;
+          text-align: center;
+          &:hover {
+            background: $bg;
+          }
+          &.location {
+            padding: 0 20px 0 18px;
+            color: $lightBlue;
+            &:after {
+              // content: '\274E';
+              position: absolute;
+              top: 3px;
+              right: 3px;
+              @include opacity(0);
+              @include transition( opacity $ease);
+              font-family: FontAwesome;
+              font-size: 8pt;
+              color: $blue;
+              line-height: normal;
+            }
+            &:hover:after {
+              @include opacity(1);
+            }
+          }
+          &:before {
+            font-family: FontAwesome;
+            color: $blue;
+            font-weight: normal;
+          }
+          &.right {
+            cursor: default;
+            float: right;
+            background: $bg;
+            @include box-shadow( -1px 0 #D7DFEA);
+            .button {
+              cursor: pointer;
+              float: left;
+              height: 20px;
+              padding: 0;
+              margin: 8px 10px 0 0;
+              @include border-radius(3px);
+              outline: 0;
+              border: 0;
+              background: transparent;
+              font-size: 10pt;
+              color: $blue;
+              font-weight: bold;
+              line-height: 20px;
+              font-smoothing: antialiased;
+            }
+            .friends {
+              padding: 0 5px;
+              margin: 8px 10px 0 10px;
+              @include transition(background $ease);
+              &:hover {
+                background: $lightBlue;
+              }
+              &:before, &:after {
+                font-family: FontAwesome;
+                color: $blue;
+                font-weight: normal;
+              }
+              &:before {
+                // content: '\1F465';
+                margin-right: 5px;
+              }
+              &:after {
+                // content: '\E75C';
+                margin-left: 5px;
+              }
+            }
+            .post {
+              padding: 0 15px;
+              background: $blue;
+              @include transition(background $ease, color $ease);
+              color: #FFF;
+              &:hover {
+                background: $lightBlue;
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+    .photo {
+      display: none;
+      ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 5px;
+        li {
+          cursor: pointer;
+          float: left;
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          @include box-shadow(inset 0 0 0 2px transparent);
+          @include transition(background $ease, box-shadow $ease);
+          color: $blue;
+          font-weight: bold;
+          &.photos {
+            border-right: 1px dotted $lightBlue;
+          }
+          &:hover {
+            background: $lightestBlue;
+            @include box-shadow( inset 0 0 0 2px $lightBlue);
+          }
+        }
+      }
+    }
+  }
+}

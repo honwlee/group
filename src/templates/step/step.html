@@ -1,0 +1,15 @@
+<div class="${baseClass}" data-dojo-type="qfacex/dijit/container/BorderContainer" data-dojo-props="liveSplitters:false,gutters:false,name:'mainNode'">
+    <div class="header nav" data-dojo-type="qfacex/dijit/container/ContentPane" data-dojo-props="region:'top'">
+        <div class="prev" data-dojo-attach-point="prevNode">
+            <a>${nls.prevStep}</a>
+        </div>
+        <div class="skip" data-dojo-attach-point="skipNode">
+            <a>${nls.skipStep}</a>
+        </div>
+    </div>
+    <div class="centerLayout" data-dojo-type="qfacex/dijit/container/StackContainer" data-dojo-props="region:'center',name:'contentNode'">
+    </div>
+    <div class="footer thumbs" data-dojo-type="qfacex/dijit/container/ContentPane" data-dojo-props="region:'bottom'">
+        <ul data-dojo-attach-point="thumbsNode"></ul>
+    </div>
+</div>

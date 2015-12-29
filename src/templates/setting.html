@@ -1,0 +1,119 @@
+<div class="setting scroll-vertical"data-dojo-attach-point="containerNode">
+	<div class="container panel">
+		<div class="row panel-body">
+			<div class="col-sm-4 "data-dojo-attach-point="centerNode">
+				<div class="profile">
+					<div class="avartar">
+						<img  src="${headImg}" style="width:80px;height:80px;">
+					</div>
+					<ul class="desc">
+						<li class="name">姓名:<span >${name}</span></li>
+						<li>关注:<span >${following}</span></li>
+						<li>粉丝:<span >${follower}</span></li>
+						<li>订阅:<span>${order}</span></li>
+					</ul>
+					<div class="summary"><span >${note}</span></div>
+				</div>
+				<div class="list-group quickSetting row">
+					<div class="panel-body panel-default">
+						<span class="panel-heading">快速通道</span>
+					</div>
+					<li class="list-group-item">
+						<span>修改密码</span>
+						<a>修改</a>
+					</li>
+					<li class="list-group-item">
+						<span>绑定手机</span >
+						<span >${phoneNum}</span>
+						<a>修改</a>
+					</li>
+					<li class="list-group-item">
+						<span>安全邮箱</span>
+						<span >${email}</span>
+						<a>修改</a>
+					</li>
+					<li class="list-group-item">
+						<span>证件信息</span>
+						<span>${cardInfo}</span>
+						<a>修改</a>
+					</li>
+					<li class="list-group-item">
+						<span>人工申诉</span>
+					</li>
+					<li class="list-group-item">
+						<span>帮助中心</span>
+					</li>
+				</div>
+			</div>
+			<div class="col-sm-8"data-dojo-attach-point="rightNode">
+				<div class="classification panel-body row "><label class="heading">关注分类</label>
+					<ul  class="row" data-dojo-attach-point="classificationNode">
+						<li class="col-sm-3"><span></span></li>
+						<li class="col-sm-3"><span></span></li>
+						<li class="col-sm-3"><span></span></li>
+						<li class="col-sm-3"><span></span></li>
+					</ul>
+				</div>
+				<div class="togglebutton">
+					<label class="labelText">自动更新此应用软件
+						<input type="checkbox"checked=""data-dojo-attach-point="autoRefureshNode">
+					</label>
+				</div>
+				<div class="togglebutton">
+					<label class="labelText">是否自动获取最新订阅
+						<input type="checkbox"checked=""data-dojo-attach-point="autoNewOrderNode">
+					</label>
+				</div>
+				<div class="togglebutton">
+					<label class="labelText">关注订阅新消息提醒
+						<input type="checkbox"checked=""data-dojo-attach-point="NewsRemindNode">
+					</label>
+				</div>
+				<label class="labelText">那些人可以@我</label>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="Can@me"type="checkbox"value="all">
+						<small>所有人</small>
+					</label>
+				</div>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="Can@me"type="checkbox"value="follower">
+						<small>关注我的人</small>
+					</label>
+				</div>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="Can@me"type="checkbox"value="no">
+						<small>不提醒</small>
+					</label>
+				</div>
+				<label class="labelText">那些人可以评论</label>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="CanCommentMe"type="checkbox"value="all">
+						<small>所有人</small>
+					</label>
+				</div>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="CanCommentMe"type="checkbox"value="follower">
+						<small>关注我的人</small>
+					</label>
+				</div>
+				<div class="clearfix checkbox checkbox-primary">
+					<label class="checkbox">
+						<input name="CanCommentMe"type="checkbox"value="no">
+						<small>不提醒</small>
+					</label>
+				</div>
+				<div class="togglebutton">
+					<label>已屏蔽人
+						<input type="checkbox"checked="">
+					</label>
+				<ul class="${fontAwesome.remove}" data-dojo-attach-point="shieldPeopleNode"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

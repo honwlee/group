@@ -1,0 +1,106 @@
+.files {
+    .files-header {
+        margin: 0;
+        padding: 10px 5px;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            float: left;
+            color: #2c2e2f;
+            font-size: 24px;
+            text-align: center;
+        }
+        .files-options {
+            float: right;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+
+            .cbr-replaced {
+                margin-bottom: 0;
+                margin-right: 5px;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                top: -1px;
+                @include user-select(none);
+
+                .cbr-input {
+                    padding-top: 5px;
+                }
+            }
+            li {
+                color: #646565;
+                display: inline-block;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                &:hover {
+                    @include opacity(.8);
+                }
+                a {
+                    text-decoration: none;
+                }
+                a {
+                    color: #646565;
+                }
+                a:hover {
+                    color: #2c2e2f;
+                }
+                label {
+                    @include user-select(none);
+                }
+                input.check {
+                    outline-style: none;
+                }
+                span.label {
+                    margin-left: 5px;
+                }
+            }
+            li + li {
+                margin-left: 10px;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        .files-header h2, .files-header .files-options {
+            float: none;
+        }
+    }
+    .list-center {
+        border-bottom: 0;
+        // @include box-offset;
+    }
+    .file-item {
+        padding: 10px 20px;
+        border-bottom: 1px solid #e5e6e9;
+        letter-spacing: .05em;
+        text-align: left;
+        @include border-radius(0);
+
+        &:hover {
+            @include opacity(.8);
+        }
+        &.active {
+            background: rgba(238, 238, 238, 0.9);
+        }
+        .file-meta {
+            .file-name {
+                padding-right: 10px;
+                font-weight: normal;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .file-author {
+                font-size: 12px;
+                color: #938E8E;
+            }
+        }
+        .file-date {
+            float: right;
+            color: #938e8e;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$listCardW:236px;
+$borderRadius: 3px;
+$linkItem:#666;
+$colorHover: #e98111; //weibo 黄
+.group{
+  @import "compass";
+  @import "group/base";
+  @import "group/mixins";
+  @import "group/layout";
+  @import "group/groupListView";
+  @import "group/groupView";
+  @import "group/members";
+  @import "group/memberProfile";
+  @import "group/writePost";
+  @import "group/status";
+  @import "group/activities";
+  @import "group/photos";
+  @import "group/files";
+  @import "group/groupAdd";
+  @import "group/personal";
+
+  background: #fff;
+  position: relative;
+}

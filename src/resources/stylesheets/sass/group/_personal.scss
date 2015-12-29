@@ -1,0 +1,53 @@
+.list-title{
+
+}
+.personal{
+    overflow-y: auto;
+}
+.smart-box {
+        margin-bottom: 30px;
+        display: block;
+}
+.smart-box-head {
+        line-height: 30px;
+        // padding: 0 0 15px;
+        border-bottom: 0;
+        margin-bottom: 0;
+        .light-title, .light-title.title a, .widget-title {
+        font-weight: 300;
+        color: #333 !important;
+        }
+        .light-title.title {
+        // font-size: 22px;
+        line-height: 17px;
+        }
+        .smart-control ,.title {
+            display: inline-block;
+            margin:0 5px;
+        }
+        .smart-control a:hover{
+            background-color: #333;
+            i{
+            color: #fff;
+            }
+        }
+}
+.smart-control a {
+        color: #666 !important;
+        display: inline-block;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: #ccc;
+        padding: 4px 12px;
+        line-height: 21px;
+        margin: 0 1px;
+}
+// add Member
+        .pop-content-wrap {
+            // padding: 0;影响新建（社区，博客等）边距样式
+        .content .picitems_ul{
+            overflow-y: auto;
+        }
+    }
+// end add Member

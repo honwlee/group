@@ -1,0 +1,43 @@
+<div class="singleGroupItem">
+    <div class="front">
+        <div class="belongShip">
+            <p data-dojo-attach-point="ownerShipNode">Owerner</p>
+        </div>
+        <div class="recipe">
+            <div class="image">
+                <img src="${tempVar.avatar}">
+                <div class="likes" data-dojo-attach-point="actionsContainerNode">
+                    <i class="${fontAwesome.heart} lv" data-test="pulse"></i>
+                </div>
+            </div>
+            <div class="article-opts-wrap">
+                <ul class="article-opts-list nav nav-pills">
+                    <li class="link-item" data-dojo-attach-point="membersBtnNode">
+                        <a>
+                            <i class="${fontAwesome.user}"></i>
+                            <span class="num">${tempVar.memberNum}</span>
+                        </a>
+                    </li>
+                    <li class="link-item" data-dojo-attach-point="likesBtnNode">
+                        <a>
+                            <i class="${fontAwesome.thumbUp}"></i>
+                            <span class="num">100</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="name">
+                ${tempVar.name}
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="header">
+            <h5 class="motto">${tempVar.description}</h5>
+        </div>
+        <div class="actions" data-dojo-attach-point="actionsNode">
+            <i class="${fontAwesome.feedDelete}" data-dojo-attach-point="deleteNode"></i>
+            <i class="${fontAwesome.reply}" data-dojo-attach-point="returnNode"></i>
+        </div>
+    </div>
+</div>

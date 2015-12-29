@@ -1,0 +1,219 @@
+// //http://www.17sucai.com/preview/2/2015-01-05/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%90%8E%E5%8F%B0%E6%A8%A1%E6%9D%BF/extra-profile.html#profile
+// .user-timeline-stories .timeline-story {
+//   position: relative;
+//   background: #fff;
+//   padding: 20px;
+//   margin-bottom: 10px;
+// }
+
+// .user-timeline-stories .timeline-story p{
+//   color:#979898;
+// }
+
+// @media screen and (max-width:767px) {
+//   .user-timeline-stories .timeline-story {
+//     margin-bottom: 20px;
+//   }
+// }
+// .user-timeline-stories .timeline-story header {
+//   color: #979898;
+//   font-size: 14px;
+//   margin-bottom: 10px;
+// }
+// .user-timeline-stories .timeline-story header .user-img {
+//   margin-right: 20px;
+//   float: left;
+// }
+// .user-timeline-stories .timeline-story header .user-img img {
+//   width: 48px;
+// }
+// .user-timeline-stories .timeline-story header .user-details {
+//   display: block;
+//   padding-top: 5px;
+// }
+// .user-timeline-stories .timeline-story header a {
+//   color: #646565;
+// }
+// .user-timeline-stories .timeline-story header a:hover {
+//   color: #4b4b4b;
+// }
+// .user-timeline-stories .timeline-story header time {
+//   display: block;
+//   font-size: 12px;
+//   color: #b1b1b1;
+// }
+// .user-timeline-stories .timeline-story .story-content {
+//   display: block;
+//   padding-left: 70px;
+// }
+// @media screen and (max-width:767px) {
+//   .user-timeline-stories .timeline-story .story-content {
+//     padding-left: 0;
+//   }
+// }
+// .user-timeline-stories .timeline-story .story-content p {
+//   font-size: 14px;
+// }
+// @media screen and (max-width:767px) {
+//   .user-timeline-stories .timeline-story > .story-content {
+//     margin-top: 20px;
+//   }
+// }
+// .user-timeline-stories .timeline-story .story-audio-item {
+//   background: #f8f8f8;
+//   padding: 30px;
+//   margin: 10px -20px;
+//   margin-top: 20px;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .story-content {
+//   margin-left: -13px;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-info {
+//   padding-bottom: 15px;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-info .artist-info, .user-timeline-stories .timeline-story .story-audio-item .audio-track-info .track-length {
+//   color: #979898;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-info .artist-info {
+//   float: left;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-info .track-length {
+//   float: right;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline {
+//   width: 100%;
+//   display: table;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .play-pause, .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .track-timeline, .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .track-volume {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .play-pause {
+//   width: 75px;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .track-volume {
+//   width: 30px;
+//   text-align: right;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .track-timeline .track-timeline-empty {
+//   display: block;
+//   height: 2px;
+//   background: #dedede;
+//   position: relative;
+// }
+// .user-timeline-stories .timeline-story .story-audio-item .audio-track-timeline .track-timeline .track-timeline-empty .track-fill {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+//   background: #2c2e2f;
+// }
+// .user-timeline-stories .timeline-story .story-options-links {
+//   padding-top: 10px;
+// }
+// .user-timeline-stories .timeline-story .story-options-links a {
+//   display: inline-block;
+//   color: #979898;
+//   margin-right: 30px;
+// }
+// .user-timeline-stories .timeline-story .story-options-links a span {
+//   display: inline-block;
+//   zoom: 1;
+//   @include opacity(0.9);
+// }
+// .user-timeline-stories .timeline-story .story-options-links a:hover {
+//   color: #575858;
+// }
+// .user-timeline-stories .timeline-story .story-options-links a.liked {
+//   color: #ed3434;
+// }
+// .user-timeline-stories .timeline-story .story-comments {
+//   border-top: 1px solid #D8D8D8;
+//   margin-top: 20px;
+//   padding-top: 10px;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment {
+//   margin-top: 10px;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .comment-user-img {
+//   display: block;
+//   float: left;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .comment-user-img img {
+//   width: 32px;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .story-comment-content {
+//   margin-left: 50px;
+//   padding-bottom: 5px;
+//   padding-left: 2px;
+//   border-bottom: 1px solid #D8D8D8;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .story-comment-content .story-comment-user-name {
+//   display: block;
+//   font-size: 14px;
+//   color: #575858;
+//   margin-bottom: 5px;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .story-comment-content .story-comment-user-name time {
+//   display: inline-block;
+//   margin-left: 5px;
+//   font-size: 11px;
+//   color: #CD8989;
+// }
+// .user-timeline-stories .timeline-story .story-comments .story-comment .story-comment-content p {
+//   font-size: 13px;
+// }
+// .user-timeline-stories .timeline-story .story-comments li:last-child .story-comment .story-comment-content {
+//   border-bottom: 0;
+// }
+// .user-timeline-stories .timeline-story .story-comment-form {
+//   margin-top: 20px;
+// }
+// .user-timeline-stories .timeline-story .story-comment-form textarea {
+//   border: 1px solid #D8D8D8;
+//   padding: 10px;
+//   max-height: 100px;
+//   margin-bottom: 10px;
+//   word-wrap: break-word;
+//   resize: vertical;
+//   height: 58px;
+//   width: 100%;
+//   margin-top: 0px;
+//   margin-bottom: 10px;
+//   overflow: hidden;
+// }
+// .user-timeline-stories .timeline-story .story-checkin {
+//   margin-bottom: 10px;
+//   border: 1px solid #D8D8D8;
+//   padding: 10px;
+// }
+// .user-timeline-stories .timeline-story .story-album {
+//   border: 1px solid #D8D8D8;
+//   padding: 10px;
+//   margin-bottom: 20px;
+// }
+// .user-timeline-stories .timeline-story .story-album .col-1, .user-timeline-stories .timeline-story .story-album .col-2 {
+//   display: block;
+//   float: left;
+//   width: 50%;
+// }
+// .user-timeline-stories .timeline-story .story-album .col-1 {
+//   padding-right: 6px;
+// } 
+// .user-timeline-stories .timeline-story .story-album .col-2 {
+//   padding-left: 6px;
+// }
+// @media screen and (max-width:767px) {
+//   .user-timeline-stories .timeline-story .story-album {
+//     padding-bottom: 0;
+//   }
+//   .user-timeline-stories .timeline-story .story-album .col-1, .user-timeline-stories .timeline-story .story-album .col-2 {
+//     padding: 0;
+//     width: 100%;
+//     float: none;
+//     margin-bottom: 10px;
+//   }
+// }
+// .user-timeline-stories .timeline-story:last-child {
+//   margin-bottom: 0;
+// }

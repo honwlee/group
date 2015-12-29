@@ -1,0 +1,1686 @@
+@charset "UTF-8";
+/* line 5, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/app.scss */
+.group {
+  /* Front-end Legos Workshop with Shay Howe
+  ================================================== */
+  /* HTML5 display definitions
+  ================================================== */
+  /* Surgical classes */
+  /* Responsive
+  ================================================== */
+  /* Margins and paddings */
+  /* Typography
+  ================================================== */
+  /* Offset */
+  /* Lists
+  ================================================== */
+  /* Buttons
+  ================================================== */
+  /* Types */
+  /* Sizes */
+  /* BEGIN GRID CODE */
+  /* END GRID CODE */
+  /* The line */
+  /* The date/time */
+  /* Right content */
+  /* The triangle */
+  /* The icons */
+  /* Example Media Queries */
+  background: #fff;
+  position: relative;
+}
+/* line 7, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group * {
+  box-sizing: border-box;
+}
+/* line 10, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group article, .group aside, .group details, .group figcaption, .group figure, .group footer, .group header, .group hgroup, .group main, .group nav, .group section, .group summary {
+  display: block;
+}
+/* line 15, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col-gutters {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 19, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col-baselines {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* line 23, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col-box {
+  padding: 10px;
+}
+/* line 32, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .margin-bottom {
+  margin-bottom: 10px;
+}
+/* line 35, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .margin-top {
+  margin-top: 10px;
+}
+/* line 38, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .pad-bottom {
+  padding-bottom: 10px;
+}
+/* line 41, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .pad-top {
+  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+/* line 49, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .text-subtle {
+  color: #999;
+  font-weight: normal;
+}
+/* line 60, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .clearfix {
+  zoom: 1;
+}
+/* line 63, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+/* line 74, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-default, .group .btn-success, .group .btn-warning, .group .btn-danger {
+  color: #fff;
+}
+/* line 77, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-default {
+  background-color: #08c;
+}
+/* line 80, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-success {
+  background-color: #62c462;
+}
+/* line 83, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-warning {
+  background-color: #fbb450;
+}
+/* line 86, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-danger {
+  background-color: #da4f49;
+}
+/* line 89, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-boring {
+  background-color: #fff;
+  color: #08c;
+}
+/* line 95, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-large {
+  border-radius: 6px;
+  border-radius: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 11px 19px;
+}
+/* line 100, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-small {
+  border-radius: 3px;
+  border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin: 0 1px;
+}
+/* line 106, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .btn-mini {
+  border-radius: 3px;
+  border-radius: 3px;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 1px 8px;
+}
+@media (min-width: 30em) {
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col1 {
+    width: 4.33333%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col2 {
+    width: 12.66667%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col3 {
+    width: 21%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col4 {
+    width: 29.33333%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col5 {
+    width: 37.66667%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col6 {
+    width: 46%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col7 {
+    width: 54.33333%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col8 {
+    width: 62.66667%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col9 {
+    width: 71%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col10 {
+    width: 79.33333%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col11 {
+    width: 87.66667%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+  /* line 121, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+  .group .col12 {
+    width: 96%;
+    padding: 0 1%;
+    margin: 0 1%;
+    float: left;
+  }
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col1 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col2 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col3 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col4 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col5 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col6 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col7 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col8 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col9 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col10 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col11 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_base.scss */
+.group .col12 {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 4em;
+}
+/* line 2, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_layout.scss */
+.group .listTop {
+  margin-top: 15px;
+}
+/* line 1, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView {
+  /* Navigation
+  ================================================== */
+}
+/* line 6, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .view-item-page {
+  overflow-y: auto;
+}
+/* line 8, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .view-item-page h2 {
+  float: left;
+  padding-top: 5px;
+}
+/* line 12, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .view-item-page .navbar {
+  display: inline-block;
+}
+/* line 20, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .profile-banner {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+/* line 25, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .profile-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+/* line 31, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .changePhoto {
+  position: absolute;
+  bottom: auto;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+}
+/* line 38, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .changePhoto .btn {
+  width: 19px;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url("http://img.t.sinajs.cn/t6/style/images/common/icon.png?id=201501231525");
+  background-position: -100px 0;
+}
+/* line 48, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .actions {
+  position: absolute;
+  right: 15px;
+  top: 200px;
+}
+/* line 53, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .col-gutters {
+  padding-top: 20px;
+}
+/* line 56, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsJumpBarContainer {
+  position: relative;
+}
+/* line 59, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsJumpBarTop {
+  border-top: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  border-bottom: 0;
+}
+/* line 65, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsClassicJumpActions {
+  border-style: none;
+  margin: 5px;
+  float: right;
+}
+/* line 70, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsClassicJumpActions input {
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  text-indent: 2px;
+  z-index: 2;
+  outline: none;
+  color: #999;
+  font-size: 12px;
+  background: transparent;
+  border: 2px solid #b2abAb;
+  border-radius: 5px;
+  border-radius: 5px;
+  border-radius: 5px;
+  transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+  transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+  transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+  transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 85, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsClassicJumpActions input:focus {
+  color: #333;
+  border-color: #d6d6d6;
+}
+/* line 91, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .uiList {
+  height: 31px;
+  margin-top: -1px;
+  overflow-y: hidden;
+  position: absolute;
+  border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  height: auto;
+}
+/* line 99, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder {
+  display: inline-block;
+  position: relative;
+  border-right: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 106, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder:first-child {
+  border-width: 0 1px 0 0;
+}
+/* line 118, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder .groupsCleanLink {
+  display: block;
+  font-weight: bold;
+  margin-right: 0;
+  border-right: 0;
+  border-top: 0;
+  color: #3b5998;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 10px 0;
+  overflow: hidden;
+  text-decoration: none;
+}
+/* line 131, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder.active {
+  cursor: default;
+}
+/* line 134, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder:hover, .group .groupView .groupsCleanLinkBorder.active {
+  background-color: #0088cc;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .groupsCleanLinkBorder:hover .groupsCleanLink, .group .groupView .groupsCleanLinkBorder.active .groupsCleanLink {
+  color: #fff;
+}
+/* line 142, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .mid-right {
+  position: relative;
+  padding-top: 0;
+  padding-right: 0;
+}
+/* line 151, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-heading {
+  margin-bottom: 8px;
+}
+/* line 153, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-heading .rightTitle {
+  font-size: 13px;
+  line-height: 12px;
+  color: #6d84b4;
+  cursor: pointer;
+  float: right;
+}
+/* line 160, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-heading .leftTitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #9197a3;
+  font-size: 12px;
+  line-height: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 169, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .mid-header {
+  padding: 12px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+/* line 173, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body {
+  /* p {  // 影响 article-text
+    margin: 0;
+    padding: 0;
+    color: #979898;
+    font-size: 12px;
+    word-break: break-all;
+  } */
+}
+/* line 181, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .description {
+  position: relative;
+}
+/* line 184, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .description i {
+  position: absolute;
+  top: 4px;
+}
+/* line 189, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .addMember {
+  position: relative;
+  background: #fff;
+  margin-top: 8px;
+  border: solid #bdc7d8;
+  border-width: 1px 0;
+  cursor: default;
+}
+/* line 197, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .wrap {
+  border: solid #bdc7d8;
+  border-width: 0 1px;
+}
+/* line 201, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .wrap i {
+  color: #9298a4;
+  padding: 7px 5px;
+}
+/* line 205, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .wrap input {
+  color: #888;
+  font-size: 12px;
+  height: 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 215, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .recomGroup {
+  height: 100px;
+  overflow: hidden;
+}
+/* line 219, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .avatar {
+  float: left;
+  padding-right: 10px;
+  height: 100px;
+  width: 100px;
+}
+/* line 225, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .avatar img {
+  width: 100%;
+}
+/* line 229, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .name {
+  display: block;
+  font-weight: bold;
+  line-height: 13px;
+  word-wrap: break-word;
+  color: #3b5998;
+  cursor: pointer;
+}
+/* line 237, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .members {
+  color: #9197a3;
+  font-size: 13px;
+  padding: 5px;
+}
+/* line 242, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .addBtn {
+  position: relative;
+  border: 1px solid;
+  border-color: #ccc #c5c6c8 #b6b7b9;
+  padding: 5px;
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 2px;
+  border-radius: 2px;
+  border-radius: 2px;
+  box-sizing: content-box;
+  box-sizing: content-box;
+  box-sizing: content-box;
+  text-shadow: 0 1px 0 #fff;
+}
+/* line 255, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel .panel-body .addBtn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 263, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .groupView .panel-mid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 268, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags {
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: center;
+  transition: all 1s ease;
+  transition: all 1s ease;
+  transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 274, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags .fmtags-tag {
+  display: inline-block;
+  color: #444;
+  margin: 10px 5px 0px 5px;
+  padding: 2px 0;
+  box-shadow: 0 1px 0 0 #e0cdcd;
+  box-shadow: 0 1px 0 0 #e0cdcd;
+  box-shadow: 0 1px 0 0 #e0cdcd;
+}
+/* line 281, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags .fmtags-tag:hover {
+  cursor: default;
+  box-shadow: 0 2px 0 0 #e98111;
+  box-shadow: 0 2px 0 0 #e98111;
+  box-shadow: 0 2px 0 0 #e98111;
+}
+/* line 285, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags .fmtags-remove-button {
+  margin-left: 5px;
+  color: #fcfcfc;
+  font-weight: bold;
+  padding: 1px 4px;
+  background: #8ca0cb;
+  cursor: pointer;
+}
+/* line 293, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags .fmtags-remove-button:hover {
+  background: #a00;
+  color: #fff;
+}
+/* line 297, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupView.scss */
+.group .tags .fmtags-remove-button:active {
+  background: #000;
+  color: #fff;
+}
+/* line 1, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_members.scss */
+.group .followIcon {
+  top: 0;
+}
+/* line 1, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile {
+  margin: 10px;
+  width: 260px;
+}
+/* line 4, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 0 10px;
+  background-color: red;
+}
+/* line 10, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions .list-group {
+  position: absolute;
+  right: 0px;
+  background: #fff;
+  margin: 0;
+}
+/* line 17, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions .action-item:hover {
+  color: #e98111;
+  cursor: default;
+}
+/* line 21, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions .action-item span, .group .member-profile .manager-actions .action-item .fa {
+  display: inline-block;
+}
+/* line 24, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions .action-item span {
+  width: 50px;
+  text-align: center;
+  padding-right: 5px;
+}
+/* line 29, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_memberProfile.scss */
+.group .member-profile .manager-actions .action-item .fa {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  margin-left: 5px;
+}
+/* line 7, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  height: 176px;
+  overflow: hidden;
+}
+/* line 16, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .trigger {
+  cursor: pointer;
+  float: left;
+  height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 10pt;
+  color: #456ba2;
+  font-weight: bold;
+  line-height: 35px;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 31, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .trigger:before {
+  float: left;
+  margin-right: 5px;
+  font-family: FontAwesome, sans-serif;
+  font-size: 15pt;
+  color: #456BA2;
+  font-weight: bold;
+}
+/* line 39, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .trigger.active {
+  cursor: default;
+  color: #d7dfea;
+}
+/* line 42, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .trigger.active:before {
+  color: #d7dfea;
+}
+/* line 47, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  clear: both;
+  height: 140px;
+  box-shadow: 0 -1px #D7DFEA, 0 1px #D7DFEA;
+  box-shadow: 0 -1px #D7DFEA, 0 1px #D7DFEA;
+  box-shadow: 0 -1px #D7DFEA, 0 1px #D7DFEA;
+}
+/* line 56, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  clear: both;
+  height: 140px;
+  box-shadow: 0 -1px #d7dfeA, 0 1px #d7dfeA;
+  box-shadow: 0 -1px #d7dfeA, 0 1px #d7dfeA;
+  box-shadow: 0 -1px #d7dfeA, 0 1px #d7dfeA;
+}
+/* line 64, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fafafa;
+}
+/* line 73, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status .input {
+  float: left;
+  width: 100%;
+  height: 105px;
+  padding: 10px;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  resize: none;
+  font-size: 10pt;
+  color: #555;
+  font-smoothing: antialiased;
+}
+/* line 86, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status .input::-webkit-input-placeholder {
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  color: rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+/* line 91, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status .input:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 95, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul {
+  clear: both;
+  height: 35px;
+  background: #eef2f7;
+  box-shadow: 0 -1px #d7dfeA;
+  box-shadow: 0 -1px #d7dfeA;
+  box-shadow: 0 -1px #d7dfeA;
+}
+/* line 100, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  min-width: 35px;
+  height: 35px;
+  box-shadow: inset -1px 0 #d7dfeA;
+  box-shadow: inset -1px 0 #d7dfeA;
+  box-shadow: inset -1px 0 #d7dfeA;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  color: #555;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+}
+/* line 112, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li:hover {
+  background: #fafafa;
+}
+/* line 115, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.location {
+  padding: 0 20px 0 18px;
+  color: #d7dfeA;
+}
+/* line 118, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.location:after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  font-family: FontAwesome;
+  font-size: 8pt;
+  color: #456ba2;
+  line-height: normal;
+}
+/* line 130, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.location:hover:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 134, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li:before {
+  font-family: FontAwesome;
+  color: #456ba2;
+  font-weight: normal;
+}
+/* line 139, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right {
+  cursor: default;
+  float: right;
+  background: #fafafa;
+  box-shadow: -1px 0 #D7DFEA;
+  box-shadow: -1px 0 #D7DFEA;
+  box-shadow: -1px 0 #D7DFEA;
+}
+/* line 144, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .button {
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  padding: 0;
+  margin: 8px 10px 0 0;
+  border-radius: 3px;
+  border-radius: 3px;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-size: 10pt;
+  color: #456ba2;
+  font-weight: bold;
+  line-height: 20px;
+  font-smoothing: antialiased;
+}
+/* line 160, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .friends {
+  padding: 0 5px;
+  margin: 8px 10px 0 10px;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  transition: background 0.15s linear;
+}
+/* line 164, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .friends:hover {
+  background: #d7dfeA;
+}
+/* line 167, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .friends:before, .group .writePost .frame .status ul li.right .friends:after {
+  font-family: FontAwesome;
+  color: #456ba2;
+  font-weight: normal;
+}
+/* line 172, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .friends:before {
+  margin-right: 5px;
+}
+/* line 176, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .friends:after {
+  margin-left: 5px;
+}
+/* line 181, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .post {
+  padding: 0 15px;
+  background: #456ba2;
+  transition: background 0.15s linear, color 0.15s linear;
+  transition: background 0.15s linear, color 0.15s linear;
+  transition: background 0.15s linear, color 0.15s linear;
+  transition: background 0.15s linear, color 0.15s linear;
+  color: #FFF;
+}
+/* line 186, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .status ul li.right .post:hover {
+  background: #d7dfeA;
+  color: #456ba2;
+}
+/* line 195, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .photo {
+  display: none;
+}
+/* line 197, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .photo ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5px;
+}
+/* line 204, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .photo ul li {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 2px transparent;
+  box-shadow: inset 0 0 0 2px transparent;
+  box-shadow: inset 0 0 0 2px transparent;
+  transition: background 0.15s linear, box-shadow 0.15s linear;
+  transition: background 0.15s linear, box-shadow 0.15s linear;
+  transition: background 0.15s linear, box-shadow 0.15s linear;
+  transition: background 0.15s linear, box-shadow 0.15s linear;
+  color: #456ba2;
+  font-weight: bold;
+}
+/* line 218, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .photo ul li.photos {
+  border-right: 1px dotted #d7dfeA;
+}
+/* line 221, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_writePost.scss */
+.group .writePost .frame .photo ul li:hover {
+  background: #eef2f7;
+  box-shadow: inset 0 0 0 2px #d7dfeA;
+  box-shadow: inset 0 0 0 2px #d7dfeA;
+  box-shadow: inset 0 0 0 2px #d7dfeA;
+}
+/* line 1, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline {
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 0 20px;
+  list-style: none;
+}
+/* line 9, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px;
+}
+/* line 21, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li {
+  position: relative;
+}
+/* line 24, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+/* line 30, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime span {
+  display: block;
+  text-align: right;
+}
+/* line 34, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime span:first-child {
+  font-size: 0.9em;
+  color: #bdd0db;
+}
+/* line 38, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime span:last-child {
+  font-size: 2.9em;
+  color: #3594cb;
+}
+/* line 42, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+  color: #ca77f7;
+}
+/* line 47, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel {
+  margin: 0 0 15px 25%;
+  background: #3594cb;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 59, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+  background: #edd7f9;
+}
+/* line 63, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel h2 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid rgba(239, 101, 101, 0.4);
+}
+/* line 70, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #3594cb;
+  border-width: 10px;
+  top: 10px;
+}
+/* line 82, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #edd7f9;
+}
+/* line 87, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon {
+  width: 40px;
+  height: 40px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 20%;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0 -35px;
+  background: #46a4da;
+  border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #afdcf8;
+}
+@media screen and (max-width: 65.375em) {
+  /* line 111, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 47.2em) {
+  /* line 116, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline:before {
+    display: none;
+  }
+  /* line 119, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  /* line 124, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left;
+  }
+  /* line 127, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+  /* line 133, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    top: -20px;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #3594cb;
+  }
+  /* line 140, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: #edd7f9;
+  }
+  /* line 144, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+  }
+}
+/* line 151, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline:before {
+  width: 5px;
+  margin-left: -6px;
+  background: #ffe4e4;
+}
+/* line 156, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime > span {
+  color: #575858;
+  font-size: 15px;
+}
+/* line 160, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime > span:first-child {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+/* line 164, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime > span:last-child {
+  color: #979898;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  font-size: 12px;
+}
+/* line 170, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime > span.large {
+  font-size: 17px;
+}
+/* line 173, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmtime > span.hidden + span {
+  margin-top: 8px;
+}
+/* line 176, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon {
+  background: #ffe4e4;
+  color: #979898;
+  box-shadow: 0px 0px 0px 3px #ffe4e4;
+  box-shadow: 0px 0px 0px 3px #ffe4e4;
+  box-shadow: 0px 0px 0px 3px #ffe4e4;
+}
+/* line 181, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-primary {
+  background-color: #2c2e2f;
+  color: #fff;
+}
+/* line 185, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-success {
+  background-color: #8dc63f;
+  color: #fff;
+}
+/* line 189, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-info {
+  background-color: #40bbea;
+  color: #fff;
+}
+/* line 193, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-danger {
+  background-color: #cc3f44;
+  color: #fff;
+}
+/* line 197, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-warning {
+  background-color: #ffba00;
+  color: #fff;
+}
+/* line 201, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-red {
+  background-color: #d5080f;
+  color: #fff;
+}
+/* line 205, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-purple {
+  background-color: #7c38bc;
+  color: #fff;
+}
+/* line 209, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-secondary {
+  background-color: #68b828;
+  color: #fff;
+}
+/* line 213, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-gray {
+  background-color: #ddd;
+  color: #777;
+}
+/* line 217, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel {
+  background: #ffe4e4;
+  color: #737881;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-clip: padding;
+  background-clip: padding;
+  background-clip: padding;
+  background-clip: padding;
+  border-radius: 0px;
+  border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 225, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel h2, .group .cbp_tmtimeline > li .cbp_tmlabel p {
+  color: #737881;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.42857143;
+}
+/* line 231, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel p + p {
+  margin-top: 10px;
+}
+/* line 234, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel h2 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+/* line 238, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel h2 a {
+  color: #303641;
+}
+/* line 241, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel h2 span {
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 245, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel blockquote {
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* line 250, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel:after {
+  border-right-color: #ffe4e4;
+}
+/* line 253, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel.empty {
+  background: 0;
+  padding: 9px 0;
+  margin-bottom: 70px;
+}
+/* line 258, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+.group .cbp_tmtimeline > li .cbp_tmlabel.empty:after {
+  visibility: hidden;
+}
+@media screen and (max-width: 47.2em) {
+  /* line 262, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: #fff;
+    left: 10px;
+  }
+  /* line 267, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .large {
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+  /* line 271, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmlabel.empty {
+    background: #ffe4e4;
+    padding: 1.7em;
+  }
+  /* line 275, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_activities.scss */
+  .group .cbp_tmtimeline > li .cbp_tmlabel.empty:after {
+    visibility: visible;
+  }
+}
+/* line 2, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header {
+  padding: 10px;
+  background: #fff;
+  margin: 0;
+}
+/* line 6, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header h2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: #2c2e2f;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 14, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options {
+  float: right;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+/* line 19, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li {
+  color: #646565;
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 23, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 26, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li a {
+  color: #646565;
+  text-decoration: none;
+}
+/* line 30, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li a:hover {
+  color: #2c2e2f;
+}
+/* line 33, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li .cbr-input {
+  padding-top: 5px;
+}
+/* line 36, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li label {
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+}
+/* line 39, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li input.check {
+  outline-style: none;
+}
+/* line 42, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li span.label {
+  margin-left: 5px;
+}
+/* line 46, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options li + li {
+  margin-left: 10px;
+}
+/* line 49, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-header .album-options .cbr-replaced {
+  margin-bottom: 0;
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  top: -1px;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 61, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+  .group .gallery .album-header {
+    padding: 10px 5px;
+  }
+  /* line 64, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+  .group .gallery .album-header h2, .group .gallery .album-header .album-options {
+    float: none;
+  }
+}
+/* line 68, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* line 74, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .thumb {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+/* line 79, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .thumb img {
+  display: block;
+  margin: 0;
+  line-height: 1;
+  width: 100%;
+  height: 159px;
+}
+/* line 87, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .name {
+  float: left;
+  width: 75%;
+}
+/* line 90, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .name span {
+  color: #2c2e2f;
+  font-weight: bold;
+}
+/* line 94, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .name em {
+  font-style: normal;
+  color: #979898;
+  font-size: 11px;
+  display: block;
+}
+/* line 100, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .name span, .group .gallery .album-images .album-image .name em {
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 108, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-options {
+  float: right;
+  width: 25%;
+  text-align: right;
+  white-space: nowrap;
+}
+/* line 113, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-options a {
+  font-size: 10px;
+  color: #5d6264;
+  padding-left: 5px;
+}
+/* line 118, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-options a:hover {
+  color: #2c2e2f;
+}
+/* line 122, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-checkbox {
+  position: absolute;
+  right: 17px;
+  top: 15px;
+  z-index: 5;
+}
+/* line 127, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-checkbox .cbr-replaced {
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 130, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .image-checkbox .cbr-replaced:hover, .group .gallery .album-images .album-image .image-checkbox .cbr-replaced.cbr-checked {
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 137, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .album-image .thumb:hover ~ .image-checkbox .cbr-replaced {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 142, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .gallery .album-images .ui-sortable-handle .album-image {
+  box-shadow: 0px 0px 0px 1px rgba(104, 184, 40, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(104, 184, 40, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(104, 184, 40, 0.2);
+  animation: glowAnimation 1s ease-in-out alternate infinite;
+  animation: glowAnimation 1s ease-in-out alternate infinite;
+  animation: glowAnimation 1s ease-in-out alternate infinite;
+}
+/* line 147, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .pswp {
+  position: absolute !important;
+}
+/* line 150, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_photos.scss */
+.group .pswp__bg {
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 2, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header {
+  margin: 0;
+  padding: 10px 5px;
+}
+/* line 6, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header h2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: #2c2e2f;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 14, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options {
+  float: right;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+/* line 20, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options .cbr-replaced {
+  margin-bottom: 0;
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  top: -1px;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+}
+/* line 29, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options .cbr-replaced .cbr-input {
+  padding-top: 5px;
+}
+/* line 33, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li {
+  color: #646565;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 39, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 42, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li a {
+  text-decoration: none;
+}
+/* line 45, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li a {
+  color: #646565;
+}
+/* line 48, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li a:hover {
+  color: #2c2e2f;
+}
+/* line 51, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li label {
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+}
+/* line 54, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li input.check {
+  outline-style: none;
+}
+/* line 57, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li span.label {
+  margin-left: 5px;
+}
+/* line 61, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .files-header .files-options li + li {
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  /* line 67, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+  .group .files .files-header h2, .group .files .files-header .files-options {
+    float: none;
+  }
+}
+/* line 71, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .list-center {
+  border-bottom: 0;
+}
+/* line 75, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e6e9;
+  letter-spacing: .05em;
+  text-align: left;
+  border-radius: 0;
+  border-radius: 0;
+  border-radius: 0;
+}
+/* line 82, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 85, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item.active {
+  background: rgba(238, 238, 238, 0.9);
+}
+/* line 89, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item .file-meta .file-name {
+  padding-right: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 95, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item .file-meta .file-author {
+  font-size: 12px;
+  color: #938E8E;
+}
+/* line 100, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_files.scss */
+.group .files .file-item .file-date {
+  float: right;
+  color: #938e8e;
+  font-size: 12px;
+}
+/* line 6, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_groupAdd.scss */
+.group .pop-content-wrap .closePopBtn {
+  top: 20px;
+}
+/* line 4, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .personal {
+  overflow-y: auto;
+}
+/* line 7, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box {
+  margin-bottom: 30px;
+  display: block;
+}
+/* line 11, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head {
+  line-height: 30px;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+/* line 16, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head .light-title, .group .smart-box-head .light-title.title a, .group .smart-box-head .widget-title {
+  font-weight: 300;
+  color: #333 !important;
+}
+/* line 20, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head .light-title.title {
+  line-height: 17px;
+}
+/* line 24, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head .smart-control, .group .smart-box-head .title {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 28, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head .smart-control a:hover {
+  background-color: #333;
+}
+/* line 30, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-box-head .smart-control a:hover i {
+  color: #fff;
+}
+/* line 35, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .smart-control a {
+  color: #666 !important;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #ccc;
+  padding: 4px 12px;
+  line-height: 21px;
+  margin: 0 1px;
+}
+/* line 49, ../../../home/hudao/uZone/dev/center/src/products/ihudao.com/groups/1.0.0/Group/src/resources/stylesheets/sass/group/_personal.scss */
+.group .pop-content-wrap .content .picitems_ul {
+  overflow-y: auto;
+}
+
+

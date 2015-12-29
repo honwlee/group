@@ -1,0 +1,301 @@
+.groupView {
+
+  .view-content {
+    
+  }
+  .view-item-page {
+    overflow-y: auto;
+    h2{
+      float: left;
+      padding-top: 5px;
+    }
+    .navbar{
+          display: inline-block;
+    }
+  }
+  // background: #f4f4f4;
+
+  /* Navigation
+  ================================================== */
+  .profile-banner {
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      @include border-radius(5px 5px 0 0);
+    }
+  }
+  .changePhoto {
+    position: absolute;
+    bottom: auto;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+
+    .btn {
+      width: 19px;
+      height: 23px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: url("http://img.t.sinajs.cn/t6/style/images/common/icon.png?id=201501231525");
+      background-position: -100px 0;
+    }
+  }
+  .actions {
+    position: absolute;
+    right: 15px;
+    top: 200px;
+  }
+  .col-gutters {
+    padding-top: 20px;
+  }
+  .groupsJumpBarContainer {
+    position: relative;
+  }
+  .groupsJumpBarTop {
+    border-top: 1px solid #fff;
+    background-color: #fff;
+    @include border-radius(0 0 6px 6px);
+    border-bottom: 0;
+  }
+  .groupsClassicJumpActions {
+    border-style: none;
+    margin: 5px;
+    float: right;
+
+    input {
+      height: 33px;
+      margin: 0;
+      padding: 0;
+      text-indent: 2px;
+      z-index: 2;
+      outline: none;
+      color: #999;
+      font-size: 12px;
+      background: transparent;
+      border: 2px solid #b2abAb;
+      @include border-radius(5px);
+      @include transition-timing-function(cubic-bezier(.3, 1.5, .6, 1));
+      @include transition-duration(0.3s);
+
+      &:focus {
+        color: #333;
+        border-color: #d6d6d6;
+      }
+    }
+  }
+  .uiList {
+    height: 31px;
+    margin-top: -1px;
+    overflow-y: hidden;
+    position: absolute;
+    @include border-radius(0 0 0 3px);
+    height: auto;
+  }
+  .groupsCleanLinkBorder {
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+    @include transition-duration(.3s);
+
+    &:first-child {
+      border-width: 0 1px 0 0;
+    }
+    &:after {
+      // background: #e9eaed;
+      // bottom: 9px;
+      // content: '';
+      // position: absolute;
+      // right: 0;
+      // top: 9px;
+      // width: 1px;
+    }
+    .groupsCleanLink {
+      display: block;
+      font-weight: bold;
+      margin-right: 0;
+      border-right: 0;
+      border-top: 0;
+      color: #3b5998;
+      height: 42px;
+      line-height: 42px;
+      padding: 0 10px 0;
+      overflow: hidden;
+      text-decoration: none;
+    }
+    &.active {
+      cursor: default;
+    }
+    &:hover, &.active {
+      background-color: #0088cc;
+
+      .groupsCleanLink {
+        color: #fff;
+      }
+    }
+  }
+  .mid-right {
+    position: relative;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .rightSideContainer {
+    // padding: 12px;
+  }
+  .panel {
+    .panel-heading {
+      margin-bottom: 8px;
+      .rightTitle {
+        font-size: 13px;
+        line-height: 12px;
+        color: #6d84b4;
+        cursor: pointer;
+        float: right;
+      }
+      .leftTitle {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #9197a3;
+        font-size: 12px;
+        line-height: 12px;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+    .mid-header {
+      padding: 12px 0 0 0;
+      border-top: 1px solid #ccc;
+    }
+    .panel-body {
+      /* p {  // 影响 article-text
+        margin: 0;
+        padding: 0;
+        color: #979898;
+        font-size: 12px;
+        word-break: break-all;
+      } */
+      .description {
+        position: relative;
+
+        i {
+          position: absolute;
+          top: 4px;
+        }
+      }
+      .addMember {
+        position: relative;
+        background: #fff;
+        margin-top: 8px;
+        border: solid #bdc7d8;
+        border-width: 1px 0;
+        cursor: default;
+      }
+      .wrap {
+        border: solid #bdc7d8;
+        border-width: 0 1px;
+
+        i {
+          color: #9298a4;
+          padding: 7px 5px;
+        }
+        input {
+          color: #888;
+          font-size: 12px;
+          height: 20px;
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          @include box-sizing(border-box);
+        }
+      }
+      .recomGroup {
+        height: 100px;
+        overflow: hidden;
+      }
+      .avatar {
+        float: left;
+        padding-right: 10px;
+        height: 100px;
+        width: 100px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .name {
+        display: block;
+        font-weight: bold;
+        line-height: 13px;
+        word-wrap: break-word;
+        color: #3b5998;
+        cursor: pointer;
+      }
+      .members {
+        color: #9197a3;
+        font-size: 13px;
+        padding: 5px;
+      }
+      .addBtn {
+        position: relative;
+        border: 1px solid;
+        border-color: #ccc #c5c6c8 #b6b7b9;
+        padding: 5px;
+        vertical-align: bottom;
+        font-weight: bold;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        @include border-radius(2px);
+        @include box-sizing(content-box);
+        @include text-shadow(0 1px 0 #fff);
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: none;
+          @include opacity(.8);
+        }
+      }
+    }
+  }
+  .panel-mid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.tags {
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: center;
+  @include transition(all ease 1s);
+
+  .fmtags-tag {
+    display: inline-block;
+    color: #444;
+    margin: 10px 5px 0px 5px;
+    padding: 2px 0;
+    @include box-shadow(0 1px 0 0 #e0cdcd);
+  }
+  .fmtags-tag:hover {
+    cursor: default;
+    @include box-shadow(0 2px 0 0 #e98111);
+  }
+  .fmtags-remove-button {
+    margin-left: 5px;
+    color: #fcfcfc;
+    font-weight: bold;
+    padding: 1px 4px;
+    background: #8ca0cb;
+    cursor: pointer;
+  }
+  .fmtags-remove-button:hover {
+    background: #a00;
+    color: #fff;
+  }
+  .fmtags-remove-button:active {
+    background: #000;
+    color: #fff;
+  }
+}

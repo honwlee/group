@@ -1,0 +1,151 @@
+{
+    "vendor": "ihudao.com",
+    "feature": "groups",
+    "name": "Group",
+    "version": "1.0.0",
+    "description": "The bundle for application and other services of group function",
+
+    "activator": "Activator",
+
+    "dependencies": {
+        "services": [{
+            "alias": "list_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "groups:ihudao.com:list_ctrl"
+        }, {
+            "alias": "univList_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:univList_ctrl"
+        }, {
+            "alias": "setting_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:setting_ctrl"
+        }, {
+            "alias": "univFilter_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:univFilter_ctrl"
+        }, {
+            "alias": "iPopPage_lib",
+            "serviceType": "Library",
+            "symbolicName": "system:utilhub.com:iPopPage_lib"
+        }, {
+            "alias": "cat_srv",
+            "serviceType": "Server",
+            "symbolicName": "system:utilhub.com:cat_srv"
+        }, {
+            "alias": "blog_srv",
+            "serviceType": "Server",
+            "symbolicName": "system:utilhub.com:blog_srv"
+        }, {
+            "alias": "org_srv",
+            "serviceType": "Server",
+            "symbolicName": "system:utilhub.com:org_srv"
+        }, {
+            "alias": "group_srv",
+            "serviceType": "Server",
+            "symbolicName": "system:utilhub.com:group_srv"
+        }, {
+            "alias": "user_srv",
+            "serviceType": "Server",
+            "symbolicName": "system:utilhub.com:user_srv"
+        }, {
+            "alias": "blogApp",
+            "serviceType": "App",
+            "symbolicName": "contents:ihudao.com:blog"
+        }, {
+            "alias": "feedApp",
+            "serviceType": "App",
+            "symbolicName": "contents:ihudao.com:feedViewer"
+        }, {
+            "alias": "photoApp",
+            "serviceType": "App",
+            "symbolicName": "multimedia:iwebterm.com:imageScanner"
+        }, {
+            "alias": "fileApp",
+            "serviceType": "App",
+            "symbolicName": "storages:utilhub.com:fileSystem"
+        }, {
+            "alias": "timeline_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:timeline_ctrl"
+        }, {
+            "alias": "article_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:article_ctrl"
+        }, {
+            "alias": "reshare_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:reshare_ctrl"
+        }, {
+            "alias": "tweet_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:tweet_ctrl"
+        }, {
+            "alias": "breadcrumbs_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:breadcrumbs_ctrl"
+        }, {
+            "alias": "masonry_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:masonry_ctrl"
+        }, {
+            "alias": "topNavbar_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:topNavbar_ctrl"
+        }, {
+            "alias": "panel_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:panel_ctrl"
+        }, {
+            "alias": "profile_ctrl",
+            "serviceType": "Control",
+            "symbolicName": "system:utilhub.com:profile_ctrl"
+        }, {
+            "alias": "iPaginate_lib",
+            "serviceType": "Library",
+            "symbolicName": "system:utilhub.com:iPaginate_lib"
+        }, {
+            "alias": "iGoTop_lib",
+            "serviceType": "Library",
+            "symbolicName": "system:utilhub.com:iGoTop_lib"
+        }],
+        "extraCssFiles": [
+            "resources/stylesheets/app.css"
+        ]
+    },
+
+    "exports": {
+        "modules": [
+            "App"
+        ],
+        "services": [{
+            "serviceType": "App",
+            "category": "groups",
+            "name": "group",
+            "classModule": "App",
+            "initParams": {
+                "title": "group"
+            }
+        }, {
+            "serviceType": "Control",
+            "category": "groups",
+            "name": "list_ctrl",
+            "classModule": "./controls/Discover",
+            "initParams": {
+                "title": "init"
+            }
+        }]
+    },
+
+    "licenses": [{
+        "type": "Commercial",
+        "url": "http://www.hudaokeji.com/license101"
+    }, {
+        "type": "OEM",
+        "url": "http://www.hudaokeji.com/license201"
+    }],
+
+    "bugs": "http://bugs.utilhub.com/",
+    "keywords": ["ihudao", "community", "sns"],
+    "homepage": "http://www.utilhub.com"
+}

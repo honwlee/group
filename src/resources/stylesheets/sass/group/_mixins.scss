@@ -1,0 +1,40 @@
+$header-height: 50px;
+$fontColor: #5e5e61;
+$textColor:#444;
+
+@mixin ul-style {
+  list-style-type: none;
+  outline-style: none;
+  margin: 0;
+  padding: 0;
+}
+@mixin li-style {
+  list-style-type: none;
+  cursor: pointer;
+}
+%group-action-btn {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  border: 2px solid #b4bbc1;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #b4bbc1;
+  cursor: pointer;
+  display: block;
+  color: #57636c;
+  border-color: #57636c;
+  &:hover {
+    color: #1372b9;
+    border-color: #1372b9;
+    background-color: rgba(200, 200, 200, .4);
+  }
+}
+%group-layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  @include transition-duration(.3s);
+}
